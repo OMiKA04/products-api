@@ -1,0 +1,25 @@
+<mxfile host="Electron">
+  <diagram name="Tutorial 3 Product Architecture UML" id="x69O9agZF-_LnYmUDG9d">
+    <mxGraphModel dx="1745" dy="1141" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="ypFx_IIKUnV8hnDg5TBy-37" edge="1" parent="1" source="ypFx_IIKUnV8hnDg5TBy-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="ypFx_IIKUnV8hnDg5TBy-33">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ypFx_IIKUnV8hnDg5TBy-32" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;ProductController&lt;/i&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- productService : ProductService&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ getAllProducts() : List&amp;lt;Product&amp;gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ getProductById(id : Long) : Product&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ addProduct(product : Product) : Product&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ deleteProduct(id : Long) : void&lt;/p&gt;" vertex="1">
+          <mxGeometry height="130" width="240" x="305" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="ypFx_IIKUnV8hnDg5TBy-38" edge="1" parent="1" source="ypFx_IIKUnV8hnDg5TBy-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="ypFx_IIKUnV8hnDg5TBy-35">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ypFx_IIKUnV8hnDg5TBy-33" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;ProductController&lt;/i&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- products : List&amp;lt;Product&amp;gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- nextId : Long&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ getAllProducts() : List&amp;lt;Product&amp;gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ getProductById(id : Long) : Optional&amp;lt;Product&amp;gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ addProduct(product : Product) : Product&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ deleteProduct(id : Long) : void&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ findByName(name : String) : List&amp;lt;Product&amp;gt;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="160" width="280" x="285" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="ypFx_IIKUnV8hnDg5TBy-35" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;Product&lt;/i&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- id : Long&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- name : String&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- price : double&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ getId() : Long&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ getName() : String&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ getPrice() : double&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ setId(id : Long) : void&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ setName(name : String) : void&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ setPrice(price : double) : void&lt;/p&gt;" vertex="1">
+          <mxGeometry height="180" width="280" x="285" y="670" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
